@@ -14,7 +14,7 @@ pygmentsUseClasses=true
 pygmentsOptions = "linenos=table"
 
 # If you want to use disqus, uncomment the line below
-disqusShortname = "wesley blog"
+disqusShortname = "wesley-blog"
 
 # ids used below are not valid. Replace with valid ones
 [params]
