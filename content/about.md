@@ -1,6 +1,6 @@
 +++
-title = "About Hugo"
-date = "2014-04-09"
+title = "About"
+date = "2019-12-04"
 image = 'street.jpg'
 +++
 
