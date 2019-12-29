@@ -1,17 +1,7 @@
 +++
 title = "About"
-date = "2019-12-04"
+date = "2019-12-28"
 image = 'street.jpg'
 +++
 
-Hugo is the **world’s fastest framework for building websites**. It is written in Go.
-
-It makes use of a variety of open source projects including:
-
-* [https://github.com/russross/blackfriday](https://github.com/russross/blackfriday)
-* [https://github.com/alecthomas/chroma](https://github.com/alecthomas/chroma)
-* [https://github.com/muesli/smartcrop](https://github.com/muesli/smartcrop)
-* [https://github.com/spf13/cobra](https://github.com/muesli/smartcrop)
-* [https://github.com/spf13/viper](https://github.com/muesli/smartcrop)
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Hello, My name is Wesley Mutwiri. I'm a fullstack web developer who loves writing and solving code. I just recently started this blog so any ideas are welcome and questions on the content I've posted will go a great way in helping me understand what needs to be done. 
