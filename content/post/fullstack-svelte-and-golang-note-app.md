@@ -51,9 +51,9 @@ For the backend application on the other hand is where some work will come in. I
 First create a new directory named backend and then initialize a new go application. We'll be using go modules so any go version above 1.11 is needed. If you haven't already, install [golang](https://golang.org/dl/), the most recent at the time of writing is 1.16 hence that is what I'm currerntly using for the backend application.
 
 ```bash
-    $ cd ..
-    $ mkdir backend
-    $ cd backend
+$ cd ..
+$ mkdir backend
+$ cd backend
 ```
 
 The commands assume that you are already in the frontend directory. If not, the structure for the application is very simple with only two folders, backend and frontend directories within the knowtify(parent directory) folder.
@@ -61,20 +61,20 @@ The commands assume that you are already in the frontend directory. If not, the 
 Anyway, moving on swiftly. Inside the backend folder, create a basic main.go file which will serve as the entry point into the application as a whole.
 
 ```bash
-    $ touch main.go
+$ touch main.go
 ```
 
 ```go
-	// serverside/main.go
-    package main
-    
-    import (
-    	"fmt"
-        "time"
-    )
-    
-    func main() {
-    	fmt.Println("This is exciting and we're just starting")
-        fmt.Printf("The time is", time.Now())
-    }
+// serverside/main.go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+func main() {
+	fmt.Println("This is exciting and we're just starting")
+    fmt.Printf("The time is", time.Now())
+}
 ```
