@@ -19,3 +19,4 @@ fields:
   label: tags
 pages:
 - content/post/fullstack-svelte-and-golang-note-app.md
+- content/post/how-to-setup-a-golang-webapp-with-docker-compose-and-postgresql.md
