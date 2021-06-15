@@ -1,9 +1,10 @@
 +++
 date = 2021-06-15T11:20:00Z
 description = "A simple way to setup a Golang API with Docker Compoes and Postgresql"
+draft = true
 image = "/uploads/external-content-duckduckgo-com.png"
 tags = ["Postgresql", "Docker", "Docker Compose", "Golang"]
-title = "How to Setup a Golang webapp with Docker Compose and Postgresql"
+title = "Develop a Golang webapp with Docker Compose and Postgresql"
 
 +++
 ## Prerequisites
