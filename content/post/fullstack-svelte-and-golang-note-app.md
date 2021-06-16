@@ -1,7 +1,7 @@
 +++
 date = 2021-02-22T21:00:00Z
 description = "A basic Svelte based Knowledge base app. Frontend in Svelte/Sapper and backend made in Golang. This is a simple tutorial on creating a fullstack application in svelte."
-image = ""
+image = "/uploads/notes.jpeg"
 tags = ["Golang", "Svelte"]
 title = "Fullstack Svelte and Golang Note app"
 
