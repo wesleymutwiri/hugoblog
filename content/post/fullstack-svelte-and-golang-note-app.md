@@ -6,8 +6,6 @@ tags = ["Golang", "Svelte"]
 title = "Fullstack Svelte and Golang Note app"
 
 +++
-# Fullstack Svelte and Golang Note Application
-
 Before we get started, if you don't know already, Svelte is the new kid on the block in terms of front-end frameworks. Its main selling points are smaller bundle size and faster applications by compiling all svelte code into vanilla JavaScript instead of using a virtual DOM in the case of other front-end frameworks such as Vue, Angular and React.
 
 ## Requirements
