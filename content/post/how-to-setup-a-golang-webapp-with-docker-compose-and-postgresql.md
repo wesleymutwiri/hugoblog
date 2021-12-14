@@ -1,5 +1,5 @@
 +++
-date = 2021-06-15T11:20:00Z
+date = 2021-12-14T20:20:00Z
 description = "A simple way to setup a Golang API with Docker Compoes and Postgresql"
 image = "/uploads/external-content-duckduckgo-com.png"
 tags = ["Postgresql", "Docker", "Docker Compose", "Golang"]
@@ -28,7 +28,6 @@ We will write a simple Golang application web application in order to test out t
 
 First thing first, let's show a simple file structure
 
-    .
     +-- docker-compose.yml
     +-- main.go
     +-- Dockerfile
@@ -133,7 +132,7 @@ Once that is done, we can now finally start the main event, the dockerization. *
     
     CMD ["./main"]
 
-We have just created a multi-stage docker build for Go which significantly reduces the time it takes to run as well as reduces the size of the final docker image created. 
+We have just created a multi-stage docker build for Go which significantly reduces the time it takes to run as well as reduces the size of the final docker image created.
 
 We can now afterwards create the docker-compose file which will hold the database docker container and allow us to run both docker containers simultaneously. In the docker-compose.yml add the following lines of code.
 
@@ -167,4 +166,3 @@ We can now afterwards create the docker-compose file which will hold the databas
         data:
     networks:
         backend:
-
