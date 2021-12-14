@@ -27,11 +27,11 @@ You will require to install the following tools:
 We will write a simple Golang application web application in order to test out that the connection works since the main point of the blog is to explore docker compose and deploying to production.
 
 First thing first, let's show a simple file structure
-
-    +-- docker-compose.yml
-    +-- main.go
-    +-- Dockerfile
-
+```
+      +-- docker-compose.yml
+      +-- main.go
+      +-- Dockerfile
+```
 Pretty simple right? Let's get started:
 
 We'll create a very simple Golang application that has a hello World route and connects to the database, since the main aim of this tutorial is to dockerize our web application and not to create some fancy web app. For fancier tutorials check back soon on this blog. In the main.go file add this code.
@@ -103,7 +103,7 @@ func main() {
 ```
 
 Once that is done, we can now finally start the main event, the dockerization. * Cue in drums, trumpets and people singing *. We first need to create a dockerfile for the main app (we could do it all in the docker-compose file but I prefer it this way).
-
+```Dockerfile
     FROM golang:latest as builder 
     
     LABEL maintainer = "Some maintainer <someMaintainer@email.com>"
@@ -131,11 +131,11 @@ Once that is done, we can now finally start the main event, the dockerization. *
     EXPOSE 10000 10000
     
     CMD ["./main"]
-
+```
 We have just created a multi-stage docker build for Go which significantly reduces the time it takes to run as well as reduces the size of the final docker image created.
 
 We can now afterwards create the docker-compose file which will hold the database docker container and allow us to run both docker containers simultaneously. In the docker-compose.yml add the following lines of code.
-
+```yaml
     version: "3.7"
     services: 
         server:
@@ -166,3 +166,4 @@ We can now afterwards create the docker-compose file which will hold the databas
         data:
     networks:
         backend:
+```
