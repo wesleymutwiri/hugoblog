@@ -102,6 +102,8 @@ func main() {
 }
 ```
 
+## The DockerFile
+
 Once that is done, we can now finally start the main event, the dockerization. * Cue in drums, trumpets and people singing *. We first need to create a dockerfile for the main app (we could do it all in the docker-compose file but I prefer it this way).
 ```Dockerfile
     FROM golang:latest as builder 
@@ -134,6 +136,7 @@ Once that is done, we can now finally start the main event, the dockerization. *
 ```
 We have just created a multi-stage docker build for Go which significantly reduces the time it takes to run as well as reduces the size of the final docker image created.
 
+## The Docker-compose file
 We can now afterwards create the docker-compose file which will hold the database docker container and allow us to run both docker containers simultaneously. In the docker-compose.yml add the following lines of code.
 ```yaml
     version: "3.7"
