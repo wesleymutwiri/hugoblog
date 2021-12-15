@@ -167,3 +167,8 @@ We can now afterwards create the docker-compose file which will hold the databas
     networks:
         backend:
 ```
+
+Now to put all the pieces together.
+```bash
+ $ docker-compose up
+```
