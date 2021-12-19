@@ -1,7 +1,7 @@
 +++
 date = 2021-12-15T21:00:00Z
 description = "A small note to gather my thoughts about a certain app inspiration"
-image = "/static/images/stuck.jpg"
+image = "stuck.jpg"
 tags = ["ideas", "travel"]
 title = "Rethinking travel planning and scheduling"
 
