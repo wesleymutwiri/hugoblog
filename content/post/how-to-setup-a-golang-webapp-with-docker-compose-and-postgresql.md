@@ -1,7 +1,7 @@
 +++
 date = 2021-12-14T20:20:00Z
 description = "A simple way to setup a Golang API with Docker Compoes and Postgresql"
-image = "/static/images/boy.jpg"
+image = "boy.jpg"
 tags = ["Postgresql", "Docker", "Docker Compose", "Golang"]
 title = "Develop a Golang webapp with Docker Compose and Postgresql"
 
