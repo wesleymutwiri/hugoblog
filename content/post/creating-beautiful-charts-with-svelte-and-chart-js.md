@@ -3,7 +3,7 @@ date = 2022-01-09T09:00:00Z
 description = "A simple svelte tutorial to demonstrate how someone can use Chart js with Svelte"
 image = "/static/uploads/notes.jpeg"
 tags = ["svelte"]
-title = "Creating Beautiful Charts with Svelte and Chart js"
+title = "Create Beautiful Charts with Svelte and Chart js"
 
 +++
 [_Svelte_](https://svelte.dev) is a **JavaScript compiler** that compiles its code to HTML, CSS and vanilla JavaScript hence creating a very performant website. On the official website, there is a [**tutorial**](https://svelte.dev/tutorial/basics) that explains Svelte’s step-by-step. If you just want to see the completed code and figure it out by yourself, go to the [**code**]() for this article.
@@ -122,6 +122,4 @@ In a real life situation, the data to be displayed would be provided from an ext
 
 Reducing the `cutout` percentage will make the doughnut chart slightly less hollow and a 0% cutout will make it a pie chart.
 
-## Chart Component
-
-This type of setup can be really good for a starter but if you have multiple charts on the same page it can and will get very messy. Hence the need to use a component based approach so that you don't have to deal with the nitty gritty.
+If you need to make multiple charts on the same page then it would be simpler and easier to copy the code and convert it into a component where you export defaults. But that is all the time I have for this week folks, stay tuned for more next week.
