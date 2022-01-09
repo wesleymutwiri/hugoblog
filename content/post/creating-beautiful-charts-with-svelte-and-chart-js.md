@@ -53,10 +53,75 @@ In the App.svelte file, delete everything leaving only the script tags. Since th
 
 ```html
 	<script>
-      import { onMount } from 'svelte;
+      import { onMount } from 'svelte';
       import Chart from 'chart.js/auto/auto.js';
-      onMount(()=> {
       
+      let portfolio;
+      
+      onMount(()=> {
+      	const data = {
+			labels: ['Expenses', 'Savings', 'Investments'],
+			datasets: [
+				{
+					label: 'My First Dataset',
+					data: [300, 50, 100],
+					backgroundColor: ['#7000e1', '#fc8800', '#00b0e8'],
+					// hoverOffset: 4,
+					borderWidth: 0
+				}
+			]
+		};
+        const config = {
+			type: 'doughnut',
+			data: data,
+			options: {
+				borderRadius: '30',
+				responsive: true,
+				cutout: '95%',
+				spacing: 2,
+				plugins: {
+					legend: {
+						position: 'bottom',
+						display: true,
+						labels: {
+							usePointStyle: true,
+							padding: 20,
+							font: {
+								size: 14
+							}
+						}
+					},
+					title: {
+						display: true,
+						text: 'My Personal Portfolio'
+					}
+				}
+			}
+		};
+        const ctx = portfolio.getContext('2d');
+        #
+        var myChart = new Chart(ctx, config);
       })
 	</script>
+	<canvas bind:this={portfolio} width={400} height={400} />
 ```
+
+And there you have it folks, a very good looking doughnut chart that showcases your "sample budget".
+
+We add the creation of the chart on the svelte `onMount` function so that the chart is created and added to the layout before it is mounted on the page. Note that the value of `canvas` will be `undefined` until the component has mounted, so we put the logic inside the `onMount` [lifecycle function](https://svelte.dev/tutorial/onmount).
+
+> The read-only `this` binding applies to every element (and component) and allows you to obtain a reference to rendered elements. For example, we can get a reference to a `<canvas>` element:
+
+[_svelte bind example_](https://svelte.dev/tutorial/bind-this "svelte bind example")
+
+Chart JS receives the data from the `data` variable we created. We have customized the labels as well as the background color of the doughnut lines.
+
+The `config` variable is what we've used to define the type of chart and to style the chart we've created. The `type` can be either bar, line, pie, radar etc etc depending on the type of chart you want to render. You can play around with the sample data we've provided to see what kind of chart will be formed.
+
+In a real life situation, the data to be displayed would be provided from an external service such as an API rather than have it hard coded as a variable.
+
+Reducing the `cutout` percentage will make the doughnut chart slightly less hollow and a 0% cutout will make it a pie chart.
+
+## Chart Component
+
+This type of setup can be really good for a starter but if you have multiple charts on the same page it can and will get very messy. Hence the need to use a component based approach so that you don't have to deal with the nitty gritty.
