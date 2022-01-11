@@ -1,7 +1,7 @@
 +++
 date = 2022-01-09T09:00:00Z
 description = "A simple svelte tutorial to demonstrate how someone can use Chart js with Svelte"
-image = "/static/uploads/notes.jpeg"
+image = "notes.jpeg"
 tags = ["svelte"]
 title = "Create Beautiful Charts with Svelte and Chart js"
 
