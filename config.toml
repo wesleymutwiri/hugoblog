@@ -1,4 +1,4 @@
-baseurl = "/"  # Include trailing slash
+baseurl = "wesleyblog.netlify.app/"  # Include trailing slash
 title = "Wesley Blog"
 theme = "newsroom"
 languageCode = "en"
