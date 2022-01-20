@@ -1,7 +1,7 @@
 +++
 date = 2021-12-23T21:00:00Z
 description = "Quickstart tutorial on how to get started with cryptocurrency trading and investments"
-image = "/themes/newsroom/static/images/speakers.jpg"
+image = "art-rachen-yJpjLD3c9bU-unsplash.jpg"
 tags = ["blockchain", "Cryptocurrencies"]
 title = "Investing into Cryptocurrencies Quickstart"
 
