@@ -123,6 +123,14 @@ Link: [Icons8](https://icons8.com/)
 
 Just like Icons8, they also do almost everything from illustrations, icons and emojis
 
+Link: [Streamline](https://app.streamlinehq.com/illustrations)
+
+#### 6. Ionicons
+
+Font awesome alternative that contains only free and open source icons
+
+Link: [Ionic](https://ionic.io/ionicons)
+
 ## Illustrations
 
 Need drawings and animated characters, look no further.
