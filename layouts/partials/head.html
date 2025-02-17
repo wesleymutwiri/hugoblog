@@ -12,8 +12,7 @@
   {{- partial "favicon.html" . }}
   <link rel='canonical' href='{{ .Permalink }}'>
   {{- $options := (dict "targetPath" "css/main.css" "outputStyle" "expanded" "enableSourceMap" "true") -}}
-  {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | resources.ToCSS
-  $options | resources.Fingerprint "sha512" }}
+  {{- $styles := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "scss/main.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
   <link rel='stylesheet' href='{{ $styles.Permalink }}' integrity='{{ $styles.Data.Integrity }}'>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
